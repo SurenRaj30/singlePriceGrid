@@ -21,7 +21,8 @@ body {
 .form {
   width: 603px;
   height: 450px;
-  border-radius: 8px 8px 8px 8px;
+  border-radius: 8px;
+  overflow: hidden;
   -webkit-box-shadow: 0px 6px 31px -9px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 6px 31px -9px rgba(0, 0, 0, 0.3);
 }
@@ -36,7 +37,6 @@ body {
           flex-direction: column;
   width: 603px;
   height: 205px;
-  border-radius: 8px 8px 0px 0px;
   background: white;
 }
 
@@ -66,7 +66,6 @@ body {
 }
 
 .secondPart {
-  border-radius: 0px 0px 0px 8px;
   width: 300px;
   height: 246px;
   background: #2ab2af;
@@ -102,7 +101,6 @@ button {
 }
 
 .thirdPart {
-  border-radius: 0px 0px 8px;
   width: 306px;
   height: 246px;
   background: #2dbebc;
@@ -149,7 +147,7 @@ li:not(:last-of-type) {
     margin-bottom: 76px;
   }
   .form {
-    height: 722px;
+    height: 780px;
     width: 311px;
   }
   .firstPart {
