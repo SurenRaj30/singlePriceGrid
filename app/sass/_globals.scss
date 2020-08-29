@@ -1,0 +1,158 @@
+@import "color";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Karla", sans-serif;
+}
+body {
+  display: flex;
+  height: 650px;
+  justify-content: center;
+  align-items: center;
+  background: hsl(204, 43%, 93%);
+}
+
+//* div for main form
+
+.form {
+  width: 603px;
+  height: 450px;
+  border-radius: 8px 8px 8px 8px;
+  box-shadow: 0px 6px 31px -9px rgba(0, 0, 0, 0.3);
+}
+
+//* div for first part
+
+.firstPart {
+  display: flex;
+  flex-direction: column;
+  width: 603px;
+  height: 205px;
+  border-radius: 8px 8px 0px 0px;
+  background: white;
+}
+.sub-first-part {
+  padding: 37px;
+}
+.sub-first-part h3 {
+  color: $cyan;
+  font-size: 22px;
+}
+.sub-first-part h4 {
+  color: $brightYellow;
+}
+.sub-first-part p {
+  color: $grayBlue;
+  font-size: 13px;
+}
+
+//* div for lower half of the main form
+
+.secondForm {
+  display: flex;
+  width: 603px;
+}
+
+//* div for second part
+
+.secondPart {
+  border-radius: 0px 0px 0px 8px;
+  width: 300px;
+  height: 246px;
+  background: $cyan;
+}
+.sub-second-part {
+  padding: 37px;
+  color: white;
+}
+.sub-second-part h2 {
+  font-size: 30px;
+}
+.sub-second-part p {
+  color: $lightGray;
+  font-size: 14px;
+  font-weight: 100;
+}
+button {
+  width: 225px;
+  height: 45px;
+  border-radius: 5px;
+  border: 0;
+  padding: 0;
+  font-size: 16px;
+  margin-top: 32px;
+  color: white;
+  background: $brightYellow;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+//*div for third part
+
+.thirdPart {
+  border-radius: 0px 0px 8px;
+  width: 306px;
+  height: 246px;
+  background: $adjCyan;
+}
+.sub-third-part {
+  padding: 37px;
+  color: white;
+}
+.sub-third-part ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: $lightGray;
+}
+li {
+  font-size: 13px;
+}
+li:not(:first-of-type) {
+  margin-top: 4px;
+}
+li:not(:last-of-type) {
+  margin-top: 4px;
+}
+
+//* extra div for adjusting the text in second part
+
+.month {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 100;
+  color: $lightGray;
+}
+.access {
+  margin-top: 5px;
+}
+
+//* responsive part
+
+@media only screen and (max-width: 600px) {
+  body {
+    height: 870px;
+    margin-bottom: 76px;
+  }
+  .form {
+    height: 722px;
+    width: 311px;
+  }
+  .firstPart {
+    width: 311px;
+    height: 267px;
+  }
+  .secondForm {
+    flex-direction: column;
+  }
+  .secondPart {
+    width: 311px;
+    height: 267px;
+    border-radius: 0px 0px 0px 0px;
+  }
+  .thirdPart {
+    width: 311px;
+    height: 267px;
+    border-radius: 0px 0px 8px 8px;
+  }
+}
